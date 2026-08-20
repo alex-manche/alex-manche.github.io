@@ -1,0 +1,80 @@
+cv:
+  name: Alexis Manche
+  label: Research Fellow in Computational Materials Chemistry
+  location: Birmingham, United Kingdom
+  image: ''
+  summary: Computational materials researcher working on point defects, electronic structure, ion/electron transport, spectroscopy and battery materials.
+
+  social_networks:
+    - network: GitHub
+      username: alex-manche
+
+  sections:
+    Experience:
+      - company: University of Birmingham
+        position: Research Fellow, School of Chemistry
+        location: Birmingham, United Kingdom
+        start_date: 2024
+        end_date: present
+        summary: Computational materials research in the Scanlon Materials Theory Group, with a focus on defects, electronic structure, transport and energy materials.
+        highlights:
+          - First-principles point-defect and dopant calculations using doped and ShakeNBreak workflows.
+          - Ion migration, charge localisation and small-polaron calculations with VASP.
+          - Development of reproducible scientific-software and spectroscopy workflows.
+      - company: University of California, Santa Barbara
+        position: Visiting Researcher
+        location: Santa Barbara, CA, USA
+        start_date: 2020
+        end_date: 2020
+        highlights:
+          - Computational and spectroscopic work on battery materials in the Clément group.
+
+    Education:
+      - institution: University of St Andrews
+        location: St Andrews, United Kingdom
+        area: Chemistry / Energy Materials
+        studyType: PhD
+        start_date: 2020
+        end_date: 2024
+        highlights:
+          - 'Thesis: The Challenge of Polyanion Redox in Oxalates.'
+          - Combined synthesis, electrochemistry, spectroscopy and first-principles modelling of Li/Na-ion cathodes.
+      - institution: University of Bordeaux
+        location: Bordeaux, France
+        area: Physical Chemistry
+        studyType: MSc
+        start_date: 2018
+        end_date: 2020
+      - institution: University of Bordeaux
+        location: Bordeaux, France
+        area: Chemistry
+        studyType: BSc
+        start_date: 2017
+        end_date: 2018
+
+    Interests:
+      - name: Computational materials chemistry
+        icon: fa-solid fa-atom
+        keywords: 'Point defects, dopants, electronic structure, charge localisation, phonons, spectroscopy, ion migration, battery materials'
+
+    Skills:
+      - name: Electronic-structure calculations
+        level: Advanced
+        icon: fa-solid fa-laptop-code
+        keywords: 'VASP, DFT+U, hybrid DFT, r2SCAN, NEB, phonons'
+      - name: Defect modelling
+        level: Advanced
+        icon: fa-solid fa-cubes
+        keywords: 'doped, ShakeNBreak, pymatgen, defect thermodynamics, chemical potentials'
+      - name: Scientific computing
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords: 'Python, Linux, HPC, Git/GitHub, workflow automation, data analysis'
+
+    Projects:
+      - name: Defect-to-spectroscopy workflows
+        summary: Building workflows that connect dopant and point-defect calculations to experimentally observable Raman, IR and X-ray spectroscopy signatures.
+      - name: Layered oxide cathodes for Na-ion batteries
+        summary: Ab initio investigation of structural, electronic and transport descriptors in sodium layered oxides.
+      - name: Small-polaron transport in transition-metal oxides
+        summary: Atomistic modelling of charge localisation and coupled ion-electron transport.

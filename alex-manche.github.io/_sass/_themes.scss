@@ -1,0 +1,13 @@
+:root {
+  --global-theme-color: #117d82;
+  --global-hover-color: #0c6266;
+  --global-text-color-light: #66717a;
+}
+html[data-theme='dark'] {
+  --global-theme-color: #58c7c9;
+  --global-hover-color: #83d9da;
+  --global-text-color-light: #aab4bb;
+}
+body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: -0.005em; }
+code, pre { font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, monospace; }
+h1, h2, h3, .navbar-brand { letter-spacing: -0.025em; }

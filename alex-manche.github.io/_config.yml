@@ -1,0 +1,270 @@
+# Alexis Manche — al-folio v1.x
+# Personal GitHub Pages site: https://alex-manche.github.io
+
+title: blank
+first_name: Alexis
+middle_name:
+last_name: Manche
+contact_note: >
+  For research collaborations, software questions, or computational materials projects, use the links below.
+description: >
+  Alexis Manche is a computational materials researcher working on point defects,
+  electronic structure, spectroscopy and battery materials.
+footer_text: >
+  Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and hosted on GitHub Pages.
+keywords: computational materials chemistry, DFT, point defects, batteries, spectroscopy, VASP, phonons
+lang: en
+icon: ⚛️
+url: https://alex-manche.github.io
+baseurl:
+last_updated: true
+back_to_top: true
+
+repo_theme_light: default
+repo_theme_dark: dark
+protect_email: false
+repo_trophies:
+  enabled: false
+external_services:
+  github_readme_stats_url: https://github-stats-extended.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  features:
+    cv:
+      enabled: true
+    distill:
+      enabled: false
+  compat:
+    bootstrap:
+      enabled: false
+  upgrade:
+    channel: stable
+    auto_apply_safe_fixes: false
+
+navbar_fixed: true
+footer_fixed: false
+search_enabled: true
+socials_in_search: true
+posts_in_search: false
+bib_search: true
+max_width: 1040px
+serve_og_meta: true
+serve_schema_org: true
+og_image: research_hero.svg
+
+analytics:
+  google:
+  cronitor:
+  pirsch:
+  openpanel:
+  cloudflare:
+enable_simple_analytics: false
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+  projects:
+    output: true
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ['_pages']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts/
+  - publication_sources.json
+  - vendor/
+keep_files:
+  - CNAME
+  - .nojekyll
+
+theme: al_folio_core
+plugins:
+  - jekyll-3rd-party-libraries
+  - jekyll-archives-v2
+  - jekyll-cache-bust
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-socials
+  - jekyll-tabs
+  - jekyll-terser
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+  - al_folio_core
+  - al_icons
+  - al_folio_cv
+  - al_folio_distill
+  - al_folio_upgrade
+  - al_folio_bootstrap_compat
+  - al_cookie
+  - al_analytics
+  - al_citations
+  - al_ext_posts
+  - al_img_tools
+  - al_search
+  - al_charts
+  - al_math
+  - al_comments
+  - al_newsletter
+  - al_email_protect
+  - al_marimo
+  - al_rtl
+
+defaults:
+  - scope:
+      path: assets
+    values:
+      sitemap: false
+
+sass:
+  style: compressed
+jekyll-minifier:
+  compress_javascript: false
+  compress_css: false
+  exclude: ['robots.txt']
+terser:
+  compress:
+    drop_console: true
+
+scholar:
+  last_name: [Manche]
+  first_name: [Alexis, A.]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  bibtex_filters: [latex, smallcaps, superscript]
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_link: Details
+  query: '@*'
+  group_by: year
+  group_order: descending
+
+enable_publication_badges:
+  altmetric: true
+  dimensions: true
+  google_scholar: false
+  inspirehep: false
+filtered_bibtex_keywords:
+  [abbr, abstract, additional_info, altmetric, annotation, arxiv, award, award_name,
+   bibtex_show, blog, code, dimensions, eprint, google_scholar_id, hal, html,
+   inspirehep_id, pdf, pmid, poster, preview, selected, slides, supp, video, website]
+max_author_limit: 8
+more_authors_animation_delay: 10
+enable_publication_thumbnails: false
+
+external_links:
+  enabled: true
+  rel: external noopener
+  target: _blank
+
+imagemagick:
+  enabled: false
+lazy_loading_images: true
+
+enable_google_verification: false
+enable_bing_verification: false
+enable_cookie_consent: false
+enable_masonry: true
+enable_math: true
+enable_tooltips: false
+enable_darkmode: true
+enable_navbar_social: false
+enable_project_categories: true
+enable_medium_zoom: false
+enable_progressbar: true
+enable_video_embedding: false
+
+# Only the CDN definitions used by the enabled features are kept here.
+third_party_libraries:
+  download: false
+  fontawesome:
+    integrity:
+      css: 'sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c='
+    url:
+      css: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css'
+    version: '7.2.0'
+  academicons:
+    integrity:
+      css: 'sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw='
+    url:
+      css: 'https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css'
+    version: '1.9.5'
+  google_fonts:
+    url:
+      fonts: 'https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Roboto+Mono:400,500|Material+Icons&display=swap'
+  imagesloaded:
+    integrity:
+      js: 'sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc='
+    url:
+      js: 'https://cdn.jsdelivr.net/npm/imagesloaded@{{version}}/imagesloaded.pkgd.min.js'
+    version: '5.0.0'
+  masonry:
+    integrity:
+      js: 'sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI='
+    url:
+      js: 'https://cdn.jsdelivr.net/npm/masonry-layout@{{version}}/dist/masonry.pkgd.min.js'
+    version: '4.2.2'
+  mathjax:
+    integrity:
+      js: 'sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI='
+    local:
+      fonts: 'output/chtml/fonts/woff-v2/'
+    url:
+      fonts: 'https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/output/chtml/fonts/woff-v2/'
+      js: 'https://cdn.jsdelivr.net/npm/mathjax@{{version}}/es5/tex-mml-chtml.js'
+    version: '3.2.2'
+  scholar-icons:
+    integrity:
+      css: 'sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY='
+    url:
+      css: 'https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css'
+    version: '1.0.3'
+  tocbot:
+    integrity:
+      css: 'sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0='
+      js: 'sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw='
+    url:
+      css: 'https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.css'
+      js: 'https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.min.js'
+    version: '4.36.4'
+  vanilla-back-to-top:
+    integrity:
+      js: 'sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg='
+    url:
+      js: 'https://cdn.jsdelivr.net/npm/vanilla-back-to-top@{{version}}/dist/vanilla-back-to-top.min.js'
+    version: '7.2.1'
